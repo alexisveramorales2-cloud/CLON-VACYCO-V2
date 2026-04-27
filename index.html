@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon Digital Hiperrealista | VACYCO - Multiplica tu Presencia 24/7</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* HEADER */
+        header {
+            background: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+        
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #7ECF51;
+        }
+        
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #fff;
+            padding: 80px 0;
+            margin-bottom: 0;
+        }
+        
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .hero-text h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero-text p {
+            font-size: 18px;
+            color: #e0e0e0;
+            margin-bottom: 30px;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        
+        .cta-primary, .cta-secondary {
+            padding: 16px 32px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .cta-primary {
+            background: #7ECF51;
+            color: #000;
+        }
+        
+        .cta-primary:hover {
+            background: #6bb842;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(126, 207, 81, 0.3);
+        }
+        
+        .cta-secondary {
+            background: transparent;
+            color: #7ECF51;
+            border: 2px solid #7ECF51;
+        }
+        
+        .cta-secondary:hover {
+            background: #7ECF51;
+            color: #000;
+        }
+        
+        .hero-image {
+            text-align: center;
+        }
+        
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+        
+        /* SECTIONS */
+        section {
+            padding: 80px 0;
+            background: #fff;
+            margin-bottom: 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+        
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+        
+        p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        
+        /* THE PROBLEM */
+        .problem {
+            background: #f8f9fa;
+        }
+        
+        .problem-list {
+            list-style: none;
+            margin: 30px 0;
+        }
+        
+        .problem-list li {
+            font-size: 18px;
+            margin: 15px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .problem-list li:before {
+            content: "✗";
+            position: absolute;
+            left: 0;
+            color: #d32f2f;
+            font-weight: bold;
+        }
+        
+        /* THE OPPORTUNITY */
+        .opportunity {
+            background: #fff;
+        }
+        
+        .opportunity-highlight {
+            background: #f0f8f0;
+            border-left: 4px solid #7ECF51;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+        
+        /* SOLUTION */
+        .solution {
+            background: #f8f9fa;
+        }
+        
+        .solution-box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border: 1px solid #eee;
+        }
+        
+        /* VIDEO */
+        .video-section {
+            background: #fff;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 12px;
+        }
+        
+        /* HOW IT WORKS */
+        .how-it-works {
+            background: #f8f9fa;
+        }
+        
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .step {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #eee;
+        }
+        
+        .step-number {
+            background: #7ECF51;
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 auto 15px;
+        }
+        
+        /* WHAT YOU GET */
+        .what-you-get {
+            background: #fff;
+        }
+        
+        .phase {
+            background: #f8f9fa;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 8px;
+            border-left: 4px solid #7ECF51;
+        }
+        
+        .phase h4 {
+            font-size: 20px;
+            color: #7ECF51;
+            margin-bottom: 15px;
+        }
+        
+        .phase ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .phase li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .phase li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #7ECF51;
+            font-weight: bold;
+        }
+        
+        /* CHANGES */
+        .changes {
+            background: #f8f9fa;
+        }
+        
+        .changes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .change-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #7ECF51;
+        }
+        
+        .change-item p {
+            color: #333;
+        }
+        
+        /* FOR WHO */
+        .for-who {
+            background: #fff;
+        }
+        
+        .for-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        
+        .for-item h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+        
+        .for-item.yes ul {
+            list-style: none;
+        }
+        
+        .for-item.yes li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .for-item.yes li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #7ECF51;
+            font-weight: bold;
+        }
+        
+        .for-item.no ul {
+            list-style: none;
+        }
+        
+        .for-item.no li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .for-item.no li:before {
+            content: "✗";
+            position: absolute;
+            left: 0;
+            color: #d32f2f;
+            font-weight: bold;
+        }
+        
+        /* PRICING */
+        .pricing {
+            background: #f8f9fa;
+        }
+        
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .price-card {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            border: 2px solid #eee;
+            text-align: center;
+        }
+        
+        .price-card.featured {
+            border-color: #7ECF51;
+            box-shadow: 0 10px 30px rgba(126, 207, 81, 0.1);
+        }
+        
+        .price-label {
+            font-size: 18px;
+            color: #7ECF51;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .price {
+            font-size: 48px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 15px 0;
+        }
+        
+        .price-detail {
+            font-size: 14px;
+            color: #999;
+            margin-bottom: 30px;
+        }
+        
+        .price-card ul {
+            list-style: none;
+            text-align: left;
+            margin: 30px 0;
+        }
+        
+        .price-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 14px;
+        }
+        
+        /* BONUSES */
+        .bonuses {
+            background: #fff;
+        }
+        
+        .bonus-box {
+            background: linear-gradient(135deg, #f0f8f0 0%, #fff 100%);
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 8px;
+            border-left: 4px solid #7ECF51;
+        }
+        
+        .bonus-box h4 {
+            color: #7ECF51;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        
+        /* DELIVERY */
+        .delivery {
+            background: #f8f9fa;
+            text-align: center;
+        }
+        
+        .delivery-box {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border: 2px solid #7ECF51;
+        }
+        
+        .delivery-box p {
+            font-size: 24px;
+            font-weight: 700;
+            color: #7ECF51;
+        }
+        
+        /* QUESTIONS */
+        .questions {
+            background: #fff;
+            text-align: center;
+        }
+        
+        .questions-box {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        .contact-method {
+            display: inline-block;
+            margin: 20px;
+        }
+        
+        .contact-method a {
+            padding: 16px 32px;
+            background: #7ECF51;
+            color: #000;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .contact-method a:hover {
+            background: #6bb842;
+            transform: translateY(-2px);
+        }
+        
+        /* CLOSING */
+        .closing {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #fff;
+            text-align: center;
+        }
+        
+        .closing h2 {
+            color: #fff;
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        
+        .closing p {
+            color: #e0e0e0;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .closing-cta {
+            display: inline-block;
+            padding: 20px 50px;
+            background: #7ECF51;
+            color: #000;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 18px;
+            transition: all 0.3s;
+        }
+        
+        .closing-cta:hover {
+            background: #6bb842;
+            transform: translateY(-2px);
+        }
+        
+        /* FOOTER */
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 50px 0 20px;
+            border-top: 1px solid #333;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h4 {
+            color: #7ECF51;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        
+        .footer-section p {
+            color: #aaa;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .footer-section a {
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover {
+            color: #7ECF51;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #333;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background: #7ECF51;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            text-align: center;
+            color: #999;
+            font-size: 14px;
+        }
+        
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+            }
+            
+            nav {
+                display: none;
+            }
+            
+            h1 {
+                font-size: 32px !important;
+            }
+            
+            h2 {
+                font-size: 28px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+            }
+            
+            .pricing-cards,
+            .for-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .steps {
+                grid-template-columns: 1fr;
+            }
+            
+            hero-text p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./IMAGENES/Imagen-corp_.png" alt="VACYCO">
+                </div>
+                <nav>
+                    <a href="#characteristics">Características</a>
+                    <a href="#pricing">Inversión</a>
+                    <a href="#contact">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Clon Digital Hiperrealista</h1>
+                    <p>Multiplica tu presencia. Escala tu marca sin depender de tu tiempo.</p>
+                    
+                    <div class="cta-buttons">
+                        <a href="https://calendly.com/vacyco/clon-digital" target="_blank" class="cta-primary">👉 QUIERO MI CLON DIGITAL</a>
+                        <a href="https://whatsapp.com/channel/0029Vb88SzPCxoAuUDRU0v2E" target="_blank" class="cta-secondary">📱 UNIRME A COMUNIDAD GRATIS</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="./IMAGENES/lex2.png" alt="CEO Real y Clon Digital">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EL PROBLEMA -->
+    <section class="problem" id="characteristics">
+        <div class="container">
+            <h2>El Problema Real</h2>
+            <p>Producir contenido de alta calidad consume el recurso más valioso de un CEO: el tiempo. Si dejas de grabar, tu marca se detiene. Si tu marca se detiene, tu flujo de leads cae.</p>
+            
+            <ul class="problem-list">
+                <li>No puedes grabar contenido todos los días</li>
+                <li>Tu presencia digital es irregular</li>
+                <li>Tu mensaje se diluye</li>
+                <li>Si no apareces, tu negocio se frena</li>
+            </ul>
+            
+            <p><strong>Resultado: pierdes alcance, autoridad y oportunidades.</strong></p>
+        </div>
+    </section>
+
+    <!-- LA OPORTUNIDAD -->
+    <section class="opportunity">
+        <div class="container">
+            <h2>La Oportunidad</h2>
+            <p>Mientras unos siguen creando contenido manual…</p>
+            <p>otros ya están creciendo con sistemas.</p>
+            
+            <div class="opportunity-highlight">
+                <p><strong>No trabajan más.</strong></p>
+                <p><strong>Se replican.</strong></p>
+            </div>
+            
+            <p style="margin-top: 30px; text-align: center;">
+                <a href="https://whatsapp.com/channel/0029Vb88SzPCxoAuUDRU0v2E" target="_blank" class="cta-secondary">📱 UNIRME A COMUNIDAD GRATIS - Aprende sin comprar</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- LA SOLUCIÓN -->
+    <section class="solution">
+        <div class="container">
+            <h2>La Solución</h2>
+            
+            <div class="solution-box">
+                <h3>Tu Clon Digital Hiperrealista</h3>
+                <p>Creamos una réplica de tu imagen y tu voz, entrenada con tu conocimiento, que:</p>
+                <ul class="problem-list" style="margin-top: 20px;">
+                    <li>Comunica tu valor todos los días</li>
+                    <li>Genera contenido sin que te grabes</li>
+                    <li>Mantiene tu presencia activa 24/7</li>
+                    <li>Posiciona tu marca como autoridad</li>
+                </ul>
+                <p style="margin-top: 20px;"><strong>No es un avatar genérico. Es tu presencia profesional multiplicada.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MÍRALO EN ACCIÓN -->
+    <section class="video-section">
+        <div class="container">
+            <h2 style="text-align: center;">Míralo en Acción</h2>
+            <p style="text-align: center;">Aquí está tu clon digital trabajando:</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/pENQnif02Fc" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>Cómo Funciona</h2>
+            <p>Integramos un sistema completo:</p>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Modelado Visual</h4>
+                    <p>Tu imagen hiperrealista</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Clonación de Voz</h4>
+                    <p>Tu voz natural y única</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Entrenamiento</h4>
+                    <p>Con tu mensaje y experiencia</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h4>Producción</h4>
+                    <p>Contenido estratégico automático</p>
+                </div>
+            </div>
+            
+            <p style="margin-top: 30px; text-align: center;"><strong>Resultado: contenido que parece grabado por ti, sin que tengas que grabarlo.</strong></p>
+        </div>
+    </section>
+
+    <!-- QUÉ RECIBES -->
+    <section class="what-you-get">
+        <div class="container">
+            <h2>Qué Recibes</h2>
+            
+            <div class="phase">
+                <h4>⚡ FASE 1 — SETUP (Único)</h4>
+                <p>Construcción total del sistema</p>
+                <ul>
+                    <li>Clon hiperrealista (imagen)</li>
+                    <li>Clon de voz natural</li>
+                    <li>Escenarios visuales profesionales</li>
+                    <li>Ajuste cinematográfico</li>
+                    <li>Entrenamiento base con tu mensaje</li>
+                    <li>10 reels estratégicos</li>
+                    <li>Guiones optimizados</li>
+                    <li>Calendario editorial</li>
+                    <li>Incluye primer mes de contenido</li>
+                </ul>
+            </div>
+            
+            <div class="phase">
+                <h4>🚀 FASE 2 — ESCALAMIENTO (Mensual)</h4>
+                <p>Sistema activo de crecimiento</p>
+                <ul>
+                    <li>Producción continua de contenido</li>
+                    <li>Optimización de mensajes</li>
+                    <li>Evolución del clon según resultados</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUÉ CAMBIA PARA TI -->
+    <section class="changes">
+        <div class="container">
+            <h2>Qué Cambia Para Ti</h2>
+            
+            <div class="changes-grid">
+                <div class="change-item">
+                    <p><strong>Presencia Constante</strong></p>
+                    <p>Sin esfuerzo</p>
+                </div>
+                <div class="change-item">
+                    <p><strong>Más Autoridad</strong></p>
+                    <p>Sin grabar</p>
+                </div>
+                <div class="change-item">
+                    <p><strong>Más Contenido</strong></p>
+                    <p>Sin más trabajo</p>
+                </div>
+                <div class="change-item">
+                    <p><strong>Más Oportunidades</strong></p>
+                    <p>Sin depender de tu tiempo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARA QUIÉN ES -->
+    <section class="for-who">
+        <div class="container">
+            <h2>Para Quién Es</h2>
+            
+            <div class="for-grid">
+                <div class="for-item yes">
+                    <h4>✅ Ideal Para:</h4>
+                    <ul>
+                        <li>Coaches</li>
+                        <li>Consultores</li>
+                        <li>Empresarios</li>
+                        <li>Marcas personales</li>
+                    </ul>
+                    <p style="margin-top: 20px;"><strong>Si tu negocio depende de tu presencia → esto es para ti</strong></p>
+                </div>
+                
+                <div class="for-item no">
+                    <h4>❌ No Es Para:</h4>
+                    <ul>
+                        <li>Quien quiere contenido genérico</li>
+                        <li>Quien no tiene mensaje claro</li>
+                        <li>Quien no está listo para crecer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 style="text-align: center;">Inversión en tu Clon Digital</h2>
+            
+            <div class="pricing-cards">
+                <div class="price-card featured">
+                    <div class="price-label">IMPLEMENTACIÓN ALPHA</div>
+                    <p style="font-size: 16px;">Tu Clon Digital Completo</p>
+                    <div class="price">USD $1,200</div>
+                    <p class="price-detail">Setup + primer mes</p>
+                    <ul>
+                        <li>Avatar 3D Cinematográfico</li>
+                        <li>Clonación de Voz Hiperrealista</li>
+                        <li>Escenarios Premium</li>
+                        <li>Ajuste Cinematográfico</li>
+                        <li>Entrenamiento de Mensaje</li>
+                        <li>10 Reels Estratégicos</li>
+                        <li>Calendario Editorial</li>
+                    </ul>
+                    <a href="https://calendly.com/vacyco/clon-digital" target="_blank" class="cta-primary" style="display: block; margin-top: 20px;">AGENDAR CONSULTA GRATIS</a>
+                </div>
+                
+                <div class="price-card">
+                    <div class="price-label">ESCALAMIENTO MENSUAL</div>
+                    <p style="font-size: 16px;">Sistema Activo de Crecimiento</p>
+                    <div class="price">USD $850</div>
+                    <p class="price-detail">/ mes</p>
+                    <ul>
+                        <li>Producción Continua</li>
+                        <li>Optimización de Mensajes</li>
+                        <li>Evolución del Clon</li>
+                        <li>Soporte Prioritario</li>
+                        <li>Análisis de Resultados</li>
+                    </ul>
+                    <p style="margin-top: 20px; color: #999; font-size: 12px;">Después del setup inicial</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUÉ INCLUYE REALMENTE -->
+    <section class="bonuses">
+        <div class="container">
+            <h2>Qué Incluye Realmente</h2>
+            <p>No necesitas herramientas externas. Recibes:</p>
+            
+            <div class="bonus-box">
+                <h4>✅ Infraestructura Tecnológica Completa</h4>
+                <p>Todo integrado y listo</p>
+            </div>
+            
+            <div class="bonus-box">
+                <h4>✅ Sistema de Contenido Listo Para Operar</h4>
+                <p>Calendario, guiones, estrategia</p>
+            </div>
+            
+            <div class="bonus-box">
+                <h4>✅ Implementación Estratégica Desde el Día 1</h4>
+                <p>Sin esperas, sin demoras</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BONOS ESPECIALES -->
+    <section class="solution">
+        <div class="container">
+            <h2>🎁 BONOS ESPECIALES</h2>
+            
+            <div class="bonus-box">
+                <h4>💥 Bonus 1: Activación Prioritaria</h4>
+                <p>Inicio acelerado del sistema. Empiezas a generar contenido en 48 horas.</p>
+            </div>
+            
+            <div class="bonus-box">
+                <h4>💥 Bonus 2: Ecosistema de Conversión</h4>
+                <p><strong>QR Estratégico</strong> con:</p>
+                <ul style="list-style: none; padding: 0;">
+                    <li>✓ Contenido exclusivo</li>
+                    <li>✓ Recursos y plantillas</li>
+                    <li>✓ Acceso a tus canales</li>
+                    <li>✓ Convierte contenido en comunidad y ventas</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIEMPO DE ENTREGA -->
+    <section class="delivery">
+        <div class="container">
+            <h2>Tiempo de Entrega</h2>
+            <div class="delivery-box">
+                <p>40–50 días hábiles tras aprobación</p>
+                <p style="font-size: 14px; color: #999; margin-top: 10px;">Luego: Contenido activo y escalado</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA CENTRAL -->
+    <section style="background: #1a1a1a; color: #fff; text-align: center; padding: 60px 0;">
+        <div class="container">
+            <h2 style="color: #fff; font-size: 36px;">¿Listo para Multiplicarte?</h2>
+            
+            <div style="margin-top: 30px; display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="https://calendly.com/vacyco/clon-digital" target="_blank" class="closing-cta">👉 QUIERO MI CLON DIGITAL</a>
+                <a href="https://whatsapp.com/channel/0029Vb88SzPCxoAuUDRU0v2E" target="_blank" style="padding: 20px 50px; background: transparent; color: #7ECF51; border: 2px solid #7ECF51; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 18px; display: inline-block;">UNIRME A COMUNIDAD GRATIS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- DUDAS -->
+    <section class="questions">
+        <div class="container">
+            <h2>¿Tienes Dudas?</h2>
+            <p>Contáctanos directo:</p>
+            
+            <div class="questions-box">
+                <div style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;">
+                    <div class="contact-method">
+                        <a href="https://wa.me/573146969340" target="_blank">📱 WhatsApp: +57 314 6969340</a>
+                    </div>
+                    <div class="contact-method">
+                        <a href="mailto:gerencia.vacyco@gmail.com">📧 Email: gerencia.vacyco@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLOSING -->
+    <section class="closing">
+        <div class="container">
+            <h2>Tu Crecimiento Tiene un Límite: Tu Tiempo</h2>
+            <p>Este Sistema lo Elimina.</p>
+            <p style="font-size: 24px; font-weight: 700;">No Trabajas Más.</p>
+            <p style="font-size: 24px; font-weight: 700; color: #7ECF51;">Te Multiplicas.</p>
+            
+            <div style="margin-top: 40px;">
+                <a href="https://calendly.com/vacyco/clon-digital" target="_blank" class="closing-cta">👉 AGENDAR CONSULTA GRATIS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>VACYCO</h4>
+                    <p>Transformando emprendedores en marcas digitales de autoridad mediante Clones Digitales Hiperrealistas.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto Directo</h4>
+                    <p>📱 WhatsApp: <a href="https://wa.me/573146969340" target="_blank">+57 314 6969340</a></p>
+                    <p>📧 Email: <a href="mailto:gerencia.vacyco@gmail.com">gerencia.vacyco@gmail.com</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Redes Sociales</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/vacyco?igsh=NWZ1OWVveWVmY3Ez" target="_blank" title="Instagram">📷</a>
+                        <a href="https://www.tiktok.com/@vacyco?_r=1&_t=ZS-95ajiZ7aoFj" target="_blank" title="TikTok">🎵</a>
+                        <a href="https://www.linkedin.com/in/vacyco?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" title="LinkedIn">💼</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 VACYCO. Clones Digitales Hiperrealistas. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
